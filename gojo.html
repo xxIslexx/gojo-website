@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gojo Scroll Animation</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Ajout de Tailwind CSS -->
+</head>
+<body class="m-0 font-sans bg-black overflow-x-hidden">
+
+  <img id="gojo-frame-start" src="./intro/intro_00000.png" alt="Gojo Frame Intro" class="fixed top-0 left-0 w-screen h-screen object-cover -z-10" />
+
+  <div class="h-[1500px]"></div> <!-- Spacer pour scroll -->
+
+  
+
+  <section id="gojo-section" class="min-h-screen bg-transparent text-white px-[10vw] py-[100px] flex flex-col md:flex-row items-center gap-12 transition-colors duration-700">
+  <!-- Texte -->
+  <div class="md:w-1/2 space-y-6">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-yellow-100 tracking-wide">SATORU GOJO</h1>
+
+    <h2 class="text-2xl md:text-3xl font-semibold text-pink-300 leading-snug">
+      Gojo est l'exorciste le plus puissant de sa génération, mais même la force a ses limites.
+    </h2>
+
+    <p class="text-lg md:text-xl leading-relaxed text-white">
+      Né avec les Six Yeux et le pouvoir de l'infini, Gojo est devenu un pilier dans le monde des exorcistes.
+      Pourtant, entre les conflits internes, les décisions politiques de Jujutsu High et ses propres dilemmes
+      moraux, sa puissance ne suffit pas toujours à protéger ceux qu’il aime.
+    </p>
+  </div>
+  <!-- Image -->
+  <div class="md:w-1/2">
+    <img src="./img/gojo.png" alt="Gojo" class="w-full max-w-md mx-auto rounded-2xl shadow-lg object-cover" />
+  </div>
+  </section>
+  
+
+  <section class="min-h-[200vh] relative z-10 bg-black text-white">
+    <div id="gojo-trigger"></div>
+    <img id="gojo-frame" src="./vid4/vid4_00000.png" alt="Gojo Frame" class="fixed top-0 left-0 w-screen h-screen object-cover -z-10" style="opacity: 0;" />
+  </section>
+
+
+
+  <section id="amanai-mort" class="min-h-screen bg-transparent text-white px-[10vw] py-[100px] flex flex-col md:flex-row items-center gap-12 transition-colors duration-700">
+  <!-- Texte -->
+  <div class="md:w-1/2 space-y-6">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-yellow-100 tracking-wide">LA MORT D'AMANAI</h1>
+
+    <h2 class="text-2xl md:text-3xl font-semibold text-pink-300 leading-snug">
+      La mission était censée être simple. Protéger Riko Amanai, garantir sa fusion avec Tengen.
+    </h2>
+
+    <p class="text-lg md:text-xl leading-relaxed text-white">
+      Ce jour-là, Gojo a vu la mort. Et il l’a surpassée.
+    Ses Six Yeux se sont ouverts. L’Infini est devenu réel.
+    Le plus fort n’était plus une légende : il marchait parmi les vivants.
+    </p>
+  </div>
+  <!-- Image -->
+  <div class="md:w-1/2">
+    <img src="./img/Jujutsu-Kaisen-S02E04-1.webp" alt="Gojo" class="w-full max-w-md mx-auto rounded-2xl shadow-lg object-cover" />
+  </div>
+  </section>
+
+
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <script src="gojo.js"></script>
+
+</body>
+</html>
