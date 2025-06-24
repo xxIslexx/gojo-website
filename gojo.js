@@ -43,10 +43,9 @@ createFrameScrollAnimation({
 });
 
 const section = document.getElementById("gojo-section");
-
 ScrollTrigger.create({
   trigger: section,
-  start: "top 10%", // ou "top 70%" selon le timing
+  start: "top top", // ou "top 70%" selon le timing
   onEnter: () => {
     section.classList.remove("bg-transparent");
     section.classList.add("bg-black");
@@ -67,8 +66,6 @@ ScrollTrigger.create({
     gsap.to("#gojo-frame", { opacity: 1, duration: 2 });
   },
   onLeaveBack: () => {
-    section.classList.remove("bg-transparent");
-    section.classList.add("bg-black");
     gsap.to("#gojo-frame", { opacity: 0, duration: 2 });
   }
 });
@@ -82,17 +79,19 @@ createFrameScrollAnimation({
   trigger: "#gojo-trigger"
 });
 
-section = document.getElementById("amanai-mort");
+const amanai_section = document.getElementById("amanai-mort");
 ScrollTrigger.create({
   trigger: "#amanai-mort",
   start: "top 10%", // ou "top 70%" selon le timing
   onEnter: () => {
-    section.classList.remove("bg-transparent");
-    section.classList.add("bg-black");
+    amanai_section.classList.remove("bg-transparent");
+    amanai_section.classList.add("bg-black");
+    gsap.to("#gojo-frame", { opacity: 0, duration: 2 });
   },
   onLeaveBack: () => {
-    section.classList.remove("bg-black");
-    section.classList.add("bg-transparent");
+    amanai_section.classList.remove("bg-black");
+    amanai_section.classList.add("bg-transparent");
+    gsap.to("#gojo-frame", { opacity: 1, duration: 2 });
   }
 });
 
