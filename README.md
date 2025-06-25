@@ -30,4 +30,4 @@ J’ai voulu reproduire l’effet **cinématographique en plein écran** qu’on
 ├── gojo.js                 # Animations GSAP et ScrollTrigger
 ├── intro/                  # Séquence image par image d'intro
 ├── vid3/, vid4/            # Autres animations scrollées
-├── img/                    # Images statiques (Gojo, Amanai...)
+├── img/                    # Images statiques
