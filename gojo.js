@@ -1,4 +1,7 @@
-gsap.registerPlugin(ScrollTrigger);
+window.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+  // ... tout ton code ici
+});
 
 function createFrameScrollAnimation({
     frameCount,
