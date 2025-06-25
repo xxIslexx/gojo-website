@@ -1,33 +1,34 @@
 # 🌀 Gojo Scroll Animation
 
-Un projet d’animation web inspiré de la hype autour de la page de lancement de **GTA 6**, revisité avec l’univers de **Jujutsu Kaisen**.
+A scroll-based animation project inspired by the cinematic feel of the **GTA 6 official website**, reimagined with the world of **Jujutsu Kaisen**.
 
-🖥️ Démo en ligne : [https://gojo-animation.netlify.app](https://gojo-animation.netlify.app)
-
----
-
-## 📌 À propos
-
-Ce mini-site rend hommage au personnage de **Satoru Gojo** à travers un effet de **scroll animé image par image**, à la manière d’un trailer.  
-J’ai voulu reproduire l’effet **cinématographique en plein écran** qu’on a pu voir sur la page officielle de GTA VI, mais avec Gojo parce que… bah c’est Gojo.
+🎬 Live Demo: [https://gojo-animation.netlify.app](https://gojo-animation.netlify.app)
 
 ---
 
-## 🛠️ Tech utilisées
+## 📌 About the Project
 
-- **HTML + Tailwind CSS** – mise en page responsive rapide
-- **JavaScript (GSAP + ScrollTrigger)** – animation fluide basée sur le scroll
-- **After Effects + export PNG/WebP** – pour créer les séquences animées
-- **Netlify** – pour l’hébergement simple et rapide
+This mini-site pays tribute to **Satoru Gojo**, using a fullscreen **frame-by-frame scroll animation**, similar to what Rockstar did for GTA VI — except this time, it's anime-powered.
+
+It was built as a learning project to explore scroll animations and cinematic storytelling in the browser.
 
 ---
 
-## 📁 Structure du projet
+## 🛠️ Technologies Used
+
+- **HTML + Tailwind CSS** – for responsive layout and design
+- **JavaScript (GSAP + ScrollTrigger)** – scroll-driven animations
+- **After Effects** – to generate animation frame sequences
+- **Netlify** – for fast and free web deployment
+
+---
+
+## 📁 Project Structure
 
 ```bash
 /
-├── index.html              # Structure de la page
-├── gojo.js                 # Animations GSAP et ScrollTrigger
-├── intro/                  # Séquence image par image d'intro
-├── vid3/, vid4/            # Autres animations scrollées
-├── img/                    # Images statiques
+├── index.html              # Main page structure
+├── gojo.js                 # Animation logic with GSAP
+├── intro/                  # Frame-by-frame animation (intro sequence)
+├── vid3/, vid4/            # Additional scroll-triggered sequences
+├── img/                    # Static images
