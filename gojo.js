@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// FONCTION POUR LES ANIMATIONS POUR EVITER DE ME REPETER COMME UN CONNARD
 function createFrameScrollAnimation({
     frameCount,
     prefixe,
@@ -13,6 +14,8 @@ function createFrameScrollAnimation({
         const filename = `${prefixe}${i.toString().padStart(5, '0')}.png`;
         images.push(filename);
     }
+
+    preloadImages(images);
 
     const obj = { frame: 0 };
     const imageElement = document.getElementById(imageId);
@@ -34,9 +37,17 @@ function createFrameScrollAnimation({
     });
 }
 
+// PRECHARGEMENT DES IMAGES POUR CE GROS PORC DE NETLIFY
+function preloadImages(images) {
+  images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+}
+
 createFrameScrollAnimation({
   frameCount: 177,
-  prefixe: "/intro/intro_",
+  prefixe: "./intro/intro_",
   imageId: "gojo-frame-start",
   tstart: "top top",
   tend: "800 top",
