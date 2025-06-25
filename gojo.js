@@ -1,7 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
-  // ... tout ton code ici
-});
+gsap.registerPlugin(ScrollTrigger);
 
 function createFrameScrollAnimation({
     frameCount,
@@ -39,7 +36,7 @@ function createFrameScrollAnimation({
 
 createFrameScrollAnimation({
   frameCount: 177,
-  prefixe: "./intro/intro_",
+  prefixe: "/intro/intro_",
   imageId: "gojo-frame-start",
   tstart: "top top",
   tend: "800 top",
