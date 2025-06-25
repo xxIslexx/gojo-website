@@ -70,14 +70,14 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: "#gojo-trigger",
-  start: "top 15%", // ou "top 70%" selon le timing
+  start: "top top", // ou "top 70%" selon le timing
   onEnter: () => {
-    section.classList.remove("bg-black");
-    section.classList.add("bg-transparent");
-    gsap.to("#gojo-frame", { opacity: 1, duration: 2 });
+    section.classList.remove("bg-transparent");
+    section.classList.add("bg-black");
+    gsap.to("#gojo-frame", { opacity: 1, duration: 1 });
   },
   onLeaveBack: () => {
-    gsap.to("#gojo-frame", { opacity: 0, duration: 2 });
+    gsap.to("#gojo-frame", { opacity: 0, duration: 1 });
   }
 });
 
@@ -97,14 +97,34 @@ ScrollTrigger.create({
   onEnter: () => {
     amanai_section.classList.remove("bg-transparent");
     amanai_section.classList.add("bg-black");
-    gsap.to("#gojo-frame", { opacity: 0, duration: 2 });
+    gsap.to("#gojo-frame", { opacity: 0, duration: 1 });
   },
   onLeaveBack: () => {
     amanai_section.classList.remove("bg-black");
     amanai_section.classList.add("bg-transparent");
-    gsap.to("#gojo-frame", { opacity: 1, duration: 2 });
+    gsap.to("#gojo-frame", { opacity: 1, duration: 1 });
   }
 });
 
+ScrollTrigger.create({
+  trigger: "#gojo-trigger2",
+  start: "top top", // ou "top 70%" selon le timing
+  onEnter: () => {
+    amanai_section.classList.remove("bg-transparent");
+    amanai_section.classList.add("bg-black");
+    gsap.to("#gojo-frame2", { opacity: 1, duration: 1 });
+  },
+  onLeaveBack: () => {
+    gsap.to("#gojo-frame2", { opacity: 0, duration: 1 });
+  }
+});
 
+createFrameScrollAnimation({
+  frameCount: 37,
+  prefixe: "./vid3/Gojo Satoru Twixtor Clips Season 2 I 4K_",
+  imageId: "gojo-frame2",
+  tstart: "#gojo-trigger2 top",
+  tend: "300 top",
+  trigger: "#gojo-trigger2"
+});
 
