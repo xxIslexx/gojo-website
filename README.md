@@ -8,7 +8,7 @@ A scroll-based animation project inspired by the cinematic feel of the **GTA 6 o
 
 ## 📌 About the Project
 
-This mini-site pays tribute to **Satoru Gojo**, using a fullscreen **frame-by-frame scroll animation**, similar to what Rockstar did for GTA VI — except this time, it's anime-powered.
+This mini-site pays tribute to **Satoru Gojo**, using a fullscreen **frame-by-frame scroll animation**, similar to what Rockstar did for GTA VI — except this time, it’s Gojo — because, well… it’s Gojo.
 
 It was built as a learning project to explore scroll animations and cinematic storytelling in the browser.
 
